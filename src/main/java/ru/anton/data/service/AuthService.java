@@ -52,7 +52,7 @@ public class AuthService {
 
     public List<AuthorizedRoute> getAuthorizedRoutes(Role role) {
 
-        var routes = new ArrayList<AuthorizedRoute>();
+        ArrayList<AuthorizedRoute> routes = new ArrayList<>();
 
         if (role.equals(Role.USER)) {
 

@@ -84,7 +84,7 @@ public class MainView extends AppLayout {
     }
 
     private Component[] createMenuItems() {
-        var user = VaadinSession.getCurrent()
+        User user = VaadinSession.getCurrent()
                 .getAttribute(User.class);
         return authService.getAuthorizedRoutes(user.getRole())
                 .stream()

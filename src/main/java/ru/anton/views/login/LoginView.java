@@ -22,8 +22,8 @@ public class LoginView extends Div {
     public LoginView(AuthService authService, AnswerDetailsRepository answerDetailsRepository) {
 
         addClassName("login-view");
-        var username = new TextField("Username");
-        var passoword = new PasswordField("Passowrd");
+        TextField username = new TextField("Username");
+        PasswordField passoword = new PasswordField("Passowrd");
         add(
                 new H1("Welcome"),
                 username,
